@@ -1,0 +1,8 @@
+{
+  "description": "Kiro acts as the orchestrator converting natural language into a structured DSL (Delphi Reimagined Spec). This ensures reproducible code generation.",
+  "version": "0.1",
+  "policies": {
+    "safety": "validate generated code before execution",
+    "style": "use React + TypeScript, Express backend"
+  }
+}
