@@ -1,0 +1,17 @@
+{
+  "instructions": "Translate user's natural language command and project model into a DSL JSON plan with 'action', 'dsl', 'explanation'.",
+  "schema_version": "1.0",
+  "example": {
+    "nl": "on button click, send data to /api/send with input 'name'",
+    "response": {
+      "action": "create_handler",
+      "dsl": {
+        "type": "http_request",
+        "method": "POST",
+        "url": "/api/send",
+        "body": { "name": "$components.input-1.value" }
+      },
+      "explanation": "Creates POST handler for button click sending input data."
+    }
+  }
+}
